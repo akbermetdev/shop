@@ -119,6 +119,10 @@
             //}
 
           }
+
+          input {
+            display: block;
+          }
         }
 
       }
@@ -164,8 +168,8 @@
 
             .hamburger-menu {
               .menu__btn {
-                top: 23px;
-                left: 17rem;
+                top: 28px;
+                left: 15rem;
               }
 
               .menu__box {
@@ -212,7 +216,7 @@
           }
 
           &__tree {
-            .popup--inner{
+            .popup--inner {
               width: 70%;
             }
           }
@@ -252,7 +256,6 @@
 
           }
         }
-
       }
     }
   }
@@ -306,7 +309,6 @@
             }
           }
         }
-
       }
     }
   }
@@ -344,7 +346,7 @@
           }
 
           &__tree {
-            .popup--inner{
+            .popup--inner {
               width: 70%;
             }
           }

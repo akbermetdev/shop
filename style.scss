@@ -3,28 +3,31 @@
 @import "mixin";
 
 
-
-#header{
-  .header{
-    &--logo{
+#header {
+  .header {
+    &--logo {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      &__nav{
-        a{
+
+      &__nav {
+        a {
           @include nav;
           padding: 0 10px;
-          &:hover{
+
+          &:hover {
             color: #5A5B6A;
-            border-bottom: 2px solid  #5A5B6A;
+            border-bottom: 2px solid #5A5B6A;
           }
 
         }
       }
-      &__search{
+
+      &__search {
         position: relative;
-        input{
-          width:468px;
+
+        input {
+          width: 468px;
           height: 40px;
           background: #EDEDF0;
           border-radius: 99px;
@@ -33,20 +36,24 @@
           padding: 0 40px;
           color: #19191D;
         }
-        &--icon{
+
+        &--icon {
           position: absolute;
           left: 10px;
           top: 12px;
         }
-        a{
+
+        a {
           font-weight: 400;
           font-size: 20px;
           color: #2264D1;
         }
       }
-      &__btn{
+
+      &__btn {
         display: flex;
-        button{
+
+        button {
           width: 90px;
           height: 34px;
           border: 1px solid #9DC2FF;
@@ -55,9 +62,11 @@
           font-size: 15px;
           color: #2264D1;
         }
-#menu__toggle {
-        opacity: 0;
-      }
+
+        #menu__toggle {
+          opacity: 0;
+        }
+
         .menu__btn {
           display: flex;
           align-items: center;
@@ -65,10 +74,11 @@
           top: 20px;
           left: 20px;
           width: 26px;
+          z-index: 999;
           height: 26px;
           cursor: pointer;
-          z-index: 1;
         }
+
         .menu__btn > span,
         .menu__btn > span::before,
         .menu__btn > span::after {
@@ -78,30 +88,33 @@
           height: 2px;
           background-color: #616161;
         }
+
         .menu__btn > span::before {
           content: '';
           top: -8px;
         }
+
         .menu__btn > span::after {
           content: '';
           top: 8px;
         }
 
         .menu__box {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        left: -100%;
-        width: 300px;
-        height: 100%;
-        margin: 0;
-        padding: 80px 0;
-        list-style: none;
-        text-align: center;
-        background-color: #ECEFF1;
-        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
-      }
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          top: 0;
+          left: -100%;
+          width: 300px;
+          height: 100%;
+          margin: 0;
+          padding: 80px 0;
+          list-style: none;
+          text-align: center;
+          z-index: 99;
+          background-color: #ECEFF1;
+          box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+        }
 
         .menu__item {
           display: block;
@@ -112,45 +125,53 @@
           font-weight: 600;
           text-decoration: none;
         }
+
         .menu__item:hover {
           background-color: #CFD8DC;
         }
+
         #menu__toggle:checked ~ .menu__btn > span {
           transform: rotate(45deg);
         }
+
         #menu__toggle:checked ~ .menu__btn > span::before {
           top: 0;
           transform: rotate(0);
         }
+
         #menu__toggle:checked ~ .menu__btn > span::after {
           top: 0;
           transform: rotate(90deg);
         }
+
         #menu__toggle:checked ~ .menu__box {
           visibility: visible;
           left: 0;
         }
       }
 
-        }
-      }
     }
+  }
+}
 
-#hero{
-  .hero{
+#hero {
+  .hero {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    &--icons{
-      &__icon{
+
+    &--icons {
+      &__icon {
         padding: 0 50px;
       }
-      h6{
+
+      h6 {
         @include title;
         padding: 0 10px;
         transition: .4s;
-        &:hover{
+
+        &:hover {
           background: white;
           color: #2264D1;
           transform: scale(1.1);
@@ -160,76 +181,91 @@
   }
 }
 
-#depart{
-  .depart{
+#depart {
+  .depart {
     display: flex;
     padding: 20px 30px;
-    &--acord{
+
+    &--acord {
       //width: 30%;
-      button{
+      button {
         @include them;
-        &:hover{
+
+        &:hover {
           background: white;
           color: #2264D1;
           transform: scale(1.1);
         }
       }
-      &__one{
-        details{
-          summary{
+
+      &__one {
+        details {
+          summary {
             @include summary;
             padding: 5px 0;
           }
-          p{
+
+          p {
             @include acord;
             padding: 5px 0;
           }
-          button{
+
+          button {
             @include btn;
           }
         }
       }
-      &__two{
-        summary{
+
+      &__two {
+        summary {
           @include summary;
         }
-        p{
+
+        p {
           @include acord;
           padding: 5px 10px;
 
         }
-        button{
+
+        button {
           @include button;
         }
       }
-      &__tree{
-        summary{
+
+      &__tree {
+        summary {
           @include summary;
         }
-        p{
+
+        p {
           @include acord;
           padding: 5px 0;
         }
       }
     }
-    &--tabs{
+
+    &--tabs {
       margin: 10px 52px;
-      &__btn{
+
+      &__btn {
         display: flex;
         justify-content: space-between;
 
-        button{
+        button {
           @include tabs;
-          &:hover{
+
+          &:hover {
             background: white;
             color: #2264D1;
             transform: scale(1.1);
           }
         }
       }
-      &__title{
+
+      &__title {
         display: flex;
-        h4{
+
+        h4 {
           font-weight: 500;
           font-size: 14px;
           display: flex;
@@ -237,45 +273,52 @@
           letter-spacing: 0.018em;
           color: #19191D;
         }
-        label{
+
+        label {
           font-weight: 400;
           font-size: 14px;
           color: #4A4B57;
           padding: 10px 10px;
         }
 
-        input{
+        input {
 
 
         }
 
       }
-      &__cards{
+
+      &__cards {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         padding: 10px 70px;
-        &__card{
+
+        &__card {
           margin-right: 10px;
-          h5{
+
+          h5 {
             font-weight: 400;
             font-size: 16px;
             line-height: 150%;
             color: #19191D;
           }
-          h3{
+
+          h3 {
             font-weight: 700;
             font-size: 24px;
             line-height: 150%;
             color: rgba(0, 0, 0, 0.87);
           }
-          p{
+
+          p {
             font-weight: 400;
             font-size: 14px;
             color: #787885;
           }
-          h2{
+
+          h2 {
             margin-top: -36px;
             margin-left: 8rem;
             width: 70px;
@@ -293,13 +336,14 @@
       }
     }
   }
-  .wrapper{
+
+  .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 20px 0;
 
-    a.open-popup{
+    a.open-popup {
       display: inline-block;
       background-color: #006;
       padding: 15px 30px;
@@ -309,17 +353,19 @@
 
 
   }
-  #popup:target{
+
+  #popup:target {
     opacity: 1;
     visibility: visible;
   }
-  #popup{
+
+  #popup {
     position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,9 +373,10 @@
     visibility: hidden;
 
   }
-  .popup--inner{
+
+  .popup--inner {
     position: relative;
-    background-color:#fff;
+    background-color: #fff;
     max-width: 500px;
     padding: 25px;
     -webkit-transform: scale(0);
@@ -340,14 +387,15 @@
     transition: all .5s ease;
 
   }
-  #popup:target .popup--inner{
+
+  #popup:target .popup--inner {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
 
   }
 
-  a.close-popup{
+  a.close-popup {
     position: absolute;
     right: -10px;
     top: -10px;
@@ -358,7 +406,7 @@
     text-decoration: none;
     text-align: center;
     line-height: 40px;
-    border-radius: 50% ;
+    border-radius: 50%;
   }
 }
 
