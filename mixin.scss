@@ -14,8 +14,7 @@
   color: #787885;
 }
 @mixin them{
-  width: 200px;
-  height: 50px;
+  padding: 12px 30px;
   background: #FFFFFF;
   border: 1px solid #9DC2FF;
   border-radius: 8px;
@@ -41,8 +40,7 @@
   cursor: pointer;
 }
 @mixin  btn{
-  width: 138px;
-  height: 40px;
+  padding: 12px 30px;
   background: #EBF2FF;
   border-radius: 4px;
   font-weight: 700;
@@ -52,8 +50,7 @@
   cursor: pointer;
 }
 @mixin button{
-  width: 75px;
-  height: 40px;
+  padding: 12px 30px;
   background: #EBF2FF;
   border-radius: 4px;
   font-weight: 700;
@@ -63,13 +60,11 @@
   cursor: pointer;
 }
 @mixin tabs{
-  width: 99px;
-  height: 36px;
+  padding: 12px 30px;
   border: 1px solid #B4B4BB;
   border-radius: 4px;
   transition: .4s;
   cursor: pointer;
-  padding: 0 10px;
   font-weight: 300;
   font-size: 10px;
   color: #787885;
