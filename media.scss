@@ -1,0 +1,394 @@
+@media (max-width: 570px) {
+  #header {
+    width: 100%;
+
+    .container {
+      width: 90%;
+
+      .header {
+        &--logo {
+          &__nav {
+            a {
+              display: none;
+            }
+          }
+
+          &__search {
+            &--icon {
+              display: none;
+            }
+
+            a {
+              display: none;
+            }
+
+            label {
+              display: none;
+            }
+
+
+          }
+
+          &__btn {
+            button {
+              display: none;
+            }
+
+            .hamburger-menu {
+              .menu__btn {
+                top: 25px;
+                left: 33rem;
+              }
+
+              .menu__box {
+                display: block;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+  #hero {
+    .container {
+      .hero {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &--icons {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  #depart {
+    .container {
+      .depart {
+        display: block;
+
+        &--acord {
+          width: -1px !important;
+
+          &__one {
+            margin: 10px 0 0 0;
+          }
+
+          &__two {
+            margin: 20px 0;
+
+          }
+
+          &__tree {
+
+          }
+        }
+
+        &--tabs {
+          &__btn {
+            display: block;
+            flex-wrap: wrap;
+
+            button {
+              margin: 20px 0;
+            }
+          }
+
+          &__title {
+            flex-wrap: wrap;
+          }
+
+          &__cards {
+            //.card2 {
+            //  margin: 20px 0;
+            //
+            //}
+            //
+            //.card4 {
+            //  margin: 20px 0;
+            //
+            //}
+            //
+            //.card6 {
+            //  margin: 20px 0;
+            //
+            //}
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #header {
+    width: 100%;
+
+    .container {
+      width: 90%;
+
+      .header {
+        &--logo {
+          &__nav {
+            a {
+              display: none;
+            }
+          }
+
+          &__search {
+            &--icon {
+              display: none;
+            }
+
+            a {
+              display: none;
+            }
+
+            label {
+              display: none;
+            }
+
+
+          }
+
+          &__btn {
+            button {
+              display: none;
+            }
+
+            .hamburger-menu {
+              .menu__btn {
+                top: 23px;
+                left: 17rem;
+              }
+
+              .menu__box {
+                display: block;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+  #hero {
+    .container {
+      .hero {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &--icons {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  #depart {
+    .container {
+      .depart {
+        display: block;
+
+        &--acord {
+          width: -1px !important;
+
+          &__one {
+            margin: 10px 0 0 0;
+          }
+
+          &__two {
+            margin: 20px 0;
+
+          }
+
+          &__tree {
+            .popup--inner{
+              width: 70%;
+            }
+          }
+
+        }
+
+        &--tabs {
+          &__btn {
+            //display: flex;
+            //flex-wrap: wrap;
+
+            button {
+              margin: 20px 0;
+            }
+          }
+
+          &__title {
+            flex-wrap: wrap;
+          }
+
+          &__cards {
+            .card2 {
+              margin: 20px 0;
+
+            }
+
+            .card4 {
+              margin: 20px 0;
+
+            }
+
+            .card6 {
+              margin: 20px 0;
+
+            }
+
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  #header {
+    width: 100%;
+
+    .container {
+      width: 90%;
+
+      .header {
+        &--logo {
+          &__nav {
+            a {
+              display: none;
+            }
+          }
+
+          &__search {
+            &--icon {
+              display: none;
+            }
+
+            a {
+              display: none;
+            }
+
+            label {
+              display: none;
+            }
+
+
+          }
+
+          &__btn {
+            button {
+              display: none;
+            }
+
+            .hamburger-menu {
+              .menu__btn {
+                top: 23px;
+                left: 23rem;
+              }
+
+              .menu__box {
+                display: block;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+  #hero {
+    .container {
+      .hero {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &--icons {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  #depart {
+    .container {
+      .depart {
+        display: block;
+
+        &--acord {
+          width: -1px !important;
+
+          &__one {
+            margin: 10px 0 0 0;
+          }
+
+          &__two {
+            margin: 20px 0;
+
+          }
+
+          &__tree {
+            .popup--inner{
+              width: 70%;
+            }
+          }
+
+        }
+
+        &--tabs {
+          &__btn {
+            //display: flex;
+            //flex-wrap: wrap;
+
+            button {
+              margin: 20px 0;
+            }
+          }
+
+          &__title {
+            flex-wrap: wrap;
+          }
+
+          &__cards {
+            .card2 {
+              margin: 20px 0;
+
+            }
+
+            .card4 {
+              margin: 20px 0;
+
+            }
+
+            .card6 {
+              margin: 20px 0;
+
+            }
+
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
